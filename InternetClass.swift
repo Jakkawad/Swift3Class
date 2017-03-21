@@ -9,6 +9,18 @@
 import Foundation
 import SystemConfiguration
 
+
+// MARK: Check internet connection
+//if isInternetAvailable() == true {
+//    print("connected")
+//} else {
+//    print("is no't connect")
+//    let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
+//    alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+//    self.present(alert, animated: true, completion: nil)
+//    
+//    
+//}
 func isInternetAvailable() -> Bool {
     var zeroAddress = sockaddr_in()
     zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
